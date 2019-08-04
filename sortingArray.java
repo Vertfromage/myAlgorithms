@@ -38,6 +38,7 @@ public class Main {
         System.out.println();
     }
     // This was the fun part, the last sorting algorithm I wrote was in python so it was fun to remember how to do it.
+    //  It's a Selection Sort https://www.geeksforgeeks.org/selection-sort/ so not the best algorithm
     public  static int[] sortIntegers(int[] array){
         //implement sorting algorithm
         int n = array.length;
@@ -57,6 +58,7 @@ public class Main {
     }
     //
     // This is Tim Buchalka's code, it's much simpler and probably has better bigO time. It seeems familiar. 
+    // It's bubble sort https://www.geeksforgeeks.org/bubble-sort/ he optomized it to stop in no swaps happen
     
         public static int[] timSortIntegers(int[] array) {
 //        int[] sortedArray = new int[array.length];
