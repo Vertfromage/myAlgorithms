@@ -42,16 +42,16 @@ public class Main {
         //implement sorting algorithm
         int n = array.length;
         for(int i= 0;i<n; i++){
-            int low = array[i];
-            int indexLow = i;
+            int high = array[i];
+            int indexHigh = i;
             for(int j=i;j<n; j++){
-                if (array[j]<low){
-                    low = array[j];
-                    indexLow = j;
+                if (array[j]>high){
+                    high = array[j];
+                    indexHigh = j;
                 }
             }
-            array[indexLow] = array[i];
-            array[i] = low;
+            array[indexHigh] = array[i];
+            array[i] = high;
         }
         return array;
     }
