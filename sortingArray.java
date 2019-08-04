@@ -19,9 +19,6 @@ public class Main {
         printArray(myIntegers);
         int[] sortedIntegers = sortIntegers(myIntegers);
         printArray(sortedIntegers);
-
-
-
     }
     public static int[] getIntegers(int number) {
         System.out.println("Enter " + number + " integer values.\r");
@@ -40,6 +37,7 @@ public class Main {
         }
         System.out.println();
     }
+    // This was the fun part, the last sorting algorithm I wrote was in python so it was fun to remember how to do it.
     public  static int[] sortIntegers(int[] array){
         //implement sorting algorithm
         int n = array.length;
@@ -56,8 +54,5 @@ public class Main {
             array[i] = low;
         }
         return array;
-
     }
-
-
 }
