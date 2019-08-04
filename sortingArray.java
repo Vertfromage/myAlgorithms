@@ -39,6 +39,8 @@ public class Main {
     }
     // This was the fun part, the last sorting algorithm I wrote was in python so it was fun to remember how to do it.
     //  It's a Selection Sort https://www.geeksforgeeks.org/selection-sort/ so not the best algorithm
+    // https://techdifferences.com/difference-between-bubble-sort-and-selection-sort.html I guess mine is better than bubble sort but not 
+    // as efficient as something like merge sort or quick sort. https://www.titrias.com/ultimate-sorting-algorithms-comparison/
     public  static int[] sortIntegers(int[] array){
         //implement sorting algorithm
         int n = array.length;
