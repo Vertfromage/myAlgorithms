@@ -55,4 +55,38 @@ public class Main {
         }
         return array;
     }
+    //
+    // This is Tim Buchalka's code, it's much simpler and probably has better bigO time. It seeems familiar. 
+    
+        public static int[] timSortIntegers(int[] array) {
+//        int[] sortedArray = new int[array.length];
+//        for(int i=0; i<array.length; i++) {
+//            sortedArray[i] = array[i];
+//        }
+        int[] sortedArray = Arrays.copyOf(array, array.length);
+
+        boolean flag = true;
+        int temp;
+        int loop = 0;
+        while(flag) {
+            flag = false;
+            // element 0     160
+            // element 1     50
+            // element 2     40
+
+            for(int i=0; i<sortedArray.length-1; i++) {
+                if(sortedArray[i] < sortedArray[i+1]) {
+                    temp = sortedArray[i];
+                    sortedArray[i] = sortedArray[i+1];
+                    sortedArray[i+1] = temp;
+                    flag = true;
+                }
+            }
+            loop++;
+        }
+        System.out.println("looped: "+loop);
+
+        return sortedArray;
+    }
+
 }
