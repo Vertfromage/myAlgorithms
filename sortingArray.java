@@ -67,13 +67,8 @@ public class Main {
 
         boolean flag = true;
         int temp;
-        int loop = 0;
         while(flag) {
             flag = false;
-            // element 0     160
-            // element 1     50
-            // element 2     40
-
             for(int i=0; i<sortedArray.length-1; i++) {
                 if(sortedArray[i] < sortedArray[i+1]) {
                     temp = sortedArray[i];
@@ -82,10 +77,7 @@ public class Main {
                     flag = true;
                 }
             }
-            loop++;
         }
-        System.out.println("looped: "+loop);
-
         return sortedArray;
     }
 
